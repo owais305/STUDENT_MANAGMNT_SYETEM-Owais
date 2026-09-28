@@ -1,0 +1,97 @@
+.container {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #111827;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input Fields */
+
+.searchBtn,
+.popUpSearch {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  background: white;
+}
+
+.searchBtn:focus,
+.popUpSearch:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+}
+
+/* Password Input */
+
+.inr {
+  position: relative;
+}
+
+.show {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Login Button */
+
+.button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+}

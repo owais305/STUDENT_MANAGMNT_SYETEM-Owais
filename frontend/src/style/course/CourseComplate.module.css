@@ -1,0 +1,53 @@
+.outer {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.outer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+/* Course Name */
+
+.inr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.inr p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  text-transform: capitalize;
+}
+
+/* Progress Bar */
+
+.progressFill {
+  width: 100%;
+  height: 26px;
+  background: #e5e7eb;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.proFillInr {
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  transition: width 1s ease-in-out;
+}

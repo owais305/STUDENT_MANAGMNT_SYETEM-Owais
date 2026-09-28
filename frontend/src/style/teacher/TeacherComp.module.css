@@ -1,0 +1,106 @@
+.topicSection {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Header */
+
+.topicHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topicHeader h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Main Card */
+
+.topicCard {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.topicCard:hover {
+  transform: translateY(-4px);
+}
+
+/* Top Labels */
+
+.inrLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+/* Topic Content */
+
+.otrLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.otrLabel p {
+  background: #f9fafb;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+.otrLabel p:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+/* Checkbox */
+
+.checkboxArea {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.checkboxArea input {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .topicHeader h3 {
+    font-size: 22px;
+  }
+
+  .topicCard {
+    padding: 15px;
+  }
+
+  .otrLabel p {
+    font-size: 14px;
+  }
+}
